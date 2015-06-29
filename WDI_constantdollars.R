@@ -18,7 +18,7 @@ for (i in unique(dat$country)) {
   
   for (j in 1:length(names(dat[4:5]))) {
     
-    dat[dat$country==i,newvars[j]] <- dat[dat$country==i,vars[j]]/us
+    dat[dat$country==i,newvars[j]] <- dat[dat$country==i,vars[j]]*100/us
     
     message(j,i)
     
